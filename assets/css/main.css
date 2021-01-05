@@ -2867,8 +2867,8 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #f2f2f2;
-			color: #a6a6a6;
+			background-color: #ffecec;
+			color: #cc8c8c;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -2884,7 +2884,7 @@
 			}
 
 			.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
-				color: #000;
+				color: #d05d5d;
 			}
 
 			.wrapper.style2 blockquote {
@@ -2897,7 +2897,7 @@
 			}
 
 			.wrapper.style2 hr {
-				border-bottom-color: rgba(0, 0, 0, 0.15);
+				border-bottom-color: #f1a5a5;
 			}
 
 			.wrapper.style2 .box {
@@ -3097,7 +3097,7 @@
 			}
 
 			.wrapper.style3 h1, .wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4, .wrapper.style3 h5, .wrapper.style3 h6 {
-				color: #ffffff;
+				color: #cc8c8c;
 			}
 
 			.wrapper.style3 blockquote {
@@ -3276,7 +3276,7 @@
 			}
 
 			.wrapper.style3 header p {
-				color: #999999;
+				color: #cc8c8cd1;
 			}
 
 			.wrapper.style3 table tbody tr {
@@ -3742,17 +3742,17 @@
 		#banner h1 {
 			font-size: 4rem;
 			margin-bottom: 1rem;
-			color: #FFF;
+			color: #cc8c8c;
 		}
 
 		#banner p {
-			color: rgba(255, 255, 255, 0.65);
+			color: #cc8c8cd1;
 			font-size: 1.5rem;
 			margin-bottom: 3rem;
 		}
 
 		#banner a {
-			color: #FFF;
+			color: #cc8c8cd1;
 			text-decoration: none;
 		}
 
