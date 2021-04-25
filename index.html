@@ -6,6 +6,74 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(36, 36, 36);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #ffcbcb;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .topnav a:hover {
+            float: left;
+            display: block;
+            color: #ffcbcb;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .topnav a.active {
+            overflow: hidden;
+            background-color: rgb(36, 36, 36);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .topnav .icon {
+          display: none;
+        }
+        
+        @media screen and (max-width: 1350px) {
+          .topnav a:not(:first-child) {display: none;}
+          .topnav a.icon {
+            float: right;
+            display: block;
+          }
+        }
+        
+        @media screen and (max-width: 1350px) {
+          .topnav.responsive {position: fixed;}
+          .topnav.responsive .icon {
+            float: right;
+            display: block;
+          }
+          .topnav.responsive a {
+            float: left;
+            display: block;
+            color: #ffcbcb;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+          }
+        }
+        
+        </style>
 </head>
 
 <body>
@@ -13,16 +81,19 @@
     <!-- Header -->
 
     <header id="header" class="alt">
-    <div class="navbar" class="navbar">
+    <div class="topnav" id="myTopnav">
         <a href="#banner">Koti </a>
-                <a href="#seven">Keikkapaketit</a>
-                <a href="#three">Laulutunnit</a>
-                <a href="#three">Äänenhuolto</a>
-                <a href="#five">Hengitysvalmennus</a>
-                <a href="#eight">Työhyvinvointipaketit</a>
-                <a href="#ten">Linkit</a>
-                <a href="#elve">Yhteystyössä</a>
-                <a href="#telwe">Ota Yhteyttä</a>
+                <a href="#seven" onclick="myFunction()">Keikkapaketit</a>
+                <a href="#three" onclick="myFunction()">Laulutunnit</a>
+                <a href="#three" onclick="myFunction()">Äänenhuolto</a>
+                <a href="#five" onclick="myFunction()">Hengitysvalmennus</a>
+                <a href="#eight" onclick="myFunction()">Työhyvinvointipaketit</a>
+                <a href="#ten" onclick="myFunction()">Linkit</a>
+                <a href="#elve" onclick="myFunction()">Yhteystyössä</a>
+                <a href="#telwe" onclick="myFunction()">Ota Yhteyttä</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
       </div>
     </header>
     <!-- Banner -->
@@ -31,7 +102,7 @@
 			its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
 			formats to work correctly.
 		-->
-    <section id="banner" data-pic="images/banner">
+    <section id="banner" data-pic="images/Mariabanner.jpg">
         <div class="inner">
             <h1>Maria Kärki</h1>
             <p>Artisti & Laulupedagogi<br />
@@ -44,7 +115,7 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic01.jpg" alt="" />
+                        <img src="images/Maria-07.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
@@ -69,7 +140,7 @@
 
             <header class="align-center">
                     
-                            <img src="images/pic04.png" alt="" width="50%" height="50%" />
+                            <img src="images/mariakärkioylogo.png" alt="" width="50%" height="50%" />
                         
             </header>
 
@@ -85,7 +156,7 @@
                 <div>
                     <div class="box">
                         <div class="image fit">
-                            <img src="images/pic02.jpg" alt="" />
+                            <img src="images/marialaulu.jpg" alt="" />
                         </div>
                         <div class="content">
                             <header class="align-center">
@@ -119,7 +190,7 @@
                 <div>
                     <div class="box">
                         <div class="image fit">
-                            <img src="images/pic03.jpg" alt="" />
+                            <img src="images/Maria-241.jpg" alt="" />
                         </div>
                         <div class="content">
                             <header class="align-center">
@@ -158,7 +229,7 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic01.jpg" alt="" />
+                        <img src="images/Maria-311.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
@@ -215,7 +286,7 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic01.jpg" alt="" />
+                        <img src="images/MariaKORJ-15.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
@@ -286,7 +357,7 @@
                             <h2>Keikkavideoita</h2>
                         </header>
                         <hr /><div class="align-center">
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/Zam0ZnR03cc"
+                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/CtRngtzBUi8"
                             frameborder="0" allowfullscreen class="video"></iframe>
                         </div>
                         </div>
@@ -428,6 +499,21 @@
                     </div>
                 </div>
 
+                <div>
+                    <div class="box">
+
+                        <div class="content" >
+                            <div class="content" style="border: 1px solid #c88383">
+                            <header class="align-center">
+                                <h2>Esiintymisvalmennus</h2>
+                            </header>
+                            <hr />
+                            <p> Vahvista esiintymistaitojasi ammattilaisen opastuksella.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 
 
                 
@@ -459,7 +545,7 @@
                     </header>
                     <p></p>
                     <ul class="actions">
-                        <li><a href="https://www.youtube.com/" class="button alt">Youtube</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCZC6cTLJjkqpRarskmY2N1A" class="button alt">Youtube</a></li>
                     </ul>
                 </div>
                 <div>
@@ -468,7 +554,7 @@
                     </header>
                     <p></p>
                     <ul class="actions">
-                        <li><a href="https://www.youtube.com/" class="button alt">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/merja.paalimaki" class="button alt">Facebook</a></li>
                     </ul>
                 </div>
                 <div>
@@ -477,7 +563,7 @@
                     </header>
                     <p></p>
                     <ul class="actions">
-                        <li><a href="https://www.youtube.com/" class="button alt">Instagram</a></li>
+                        <li><a href="" class="button alt">Instagram</a></li>
                     </ul>
                 </div>
             </div>
@@ -541,6 +627,14 @@
     <section id="telwe" class="wrapper style3">
         <div class="inner">
 
+            
+
+        </div>
+    </section>
+
+    <section id="telwe" class="wrapper style3">
+        <div class="inner">
+
             <header class="align-center">
                 <h2>
                     Ota Yhteyttä</h2>
@@ -595,6 +689,17 @@
 
 
         </script> 
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
